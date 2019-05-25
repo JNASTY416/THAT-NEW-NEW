@@ -1,0 +1,113 @@
+{
+  "accentColor": {
+    "label": "Accent Color",
+    "type": "colorpicker",
+    "value": "#f61c23"
+  },
+  "bgColor": {
+    "label": "Background Color",
+    "type": "colorpicker",
+    "value": "#FFFFFF"
+  },
+  "bgOpacity": {
+    "label": "Background Color - Opacity",
+    "max": 100,
+    "min": 0,
+    "name": "",
+    "steps": 2,
+    "type": "slider",
+    "value": 46
+  },
+  "botFontColor": {
+    "label": "Bottom Font Color",
+    "type": "colorpicker",
+    "value": "#FFFFFF"
+  },
+  "botText": {
+    "label": "Bottom Text Box",
+    "type": "textfield",
+    "value": "{from}"
+  },
+  "fadeOutOpacity": {
+    "label": "Fade Out Opacity - The opacity of faded out elements.",
+    "max": 100,
+    "min": 1,
+    "name": "",
+    "steps": 1,
+    "type": "slider",
+    "value": 44
+  },
+  "fadeOutPos": {
+    "label": "Fade Out Position - Where do you want to start events fading out at?",
+    "max": 11,
+    "min": 1,
+    "name": "",
+    "steps": 1,
+    "type": "slider",
+    "value": 5
+  },
+  "fromSize": {
+    "label": "Bot Text -- Font Size",
+    "max": 50,
+    "min": 10,
+    "name": "",
+    "steps": 1,
+    "type": "slider",
+    "value": 30
+  },
+  "fromWeight": {
+    "label": "Bot Text -- Font Weight. The thickness of the bottom text",
+    "max": 900,
+    "min": 100,
+    "name": "",
+    "steps": 100,
+    "type": "slider",
+    "value": 500
+  },
+  "layout": {
+    "label": "Layout Type",
+    "options": {
+      "block": "Vertical",
+      "inline-block": "Horizontal"
+    },
+    "type": "dropdown",
+    "value": "block"
+  },
+  "svgScaleSize": {
+    "label": "Scale Swipe Size - If you increase the font, you may need to increase this option, in order for the swipe animation to properly fill the event container.",
+    "max": 200,
+    "min": 50,
+    "name": "",
+    "steps": 2,
+    "type": "slider",
+    "value": 100
+  },
+  "tagSize": {
+    "label": "Top Text -- Font Size",
+    "max": 50,
+    "min": 10,
+    "name": "",
+    "steps": 1,
+    "type": "slider",
+    "value": 20
+  },
+  "tagWeight": {
+    "label": "Top Text -- Font Weight. The thickness of the top text",
+    "max": 900,
+    "min": 100,
+    "name": "",
+    "steps": 100,
+    "type": "slider",
+    "value": 700
+  },
+  "topFontColor": {
+    "label": "Top Font Color",
+    "type": "colorpicker",
+    "value": "#f61c23"
+  },
+  "topText": {
+    "label": "Top Text Box",
+    "type": "textfield",
+    "value": "{tag}"
+  }
+}
