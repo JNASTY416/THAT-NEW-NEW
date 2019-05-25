@@ -1,0 +1,47 @@
+var eventNumber = 1,
+    max,
+    layout;
+
+// Please use event listeners to run functions.
+document.addEventListener('onLoad', function(obj) {
+  // obj will be empty for event list
+  // this will fire only once when the widget loads
+  max = obj.detail.max_events;
+
+  layout = obj.detail.custom_json.layout.value;
+    if(layout == "inline-block"){
+      $("body").css( "width", "3000px" );
+    }
+
+  if(obj.detail.flip_x){
+    $("body").addClass("rightAlign");
+  }
+  if(obj.detail.flip_y){
+    $("body").addClass("botAlign");
+  }
+});
+
+document.addEventListener('onEventsLoaded', function() {
+    showHistory(); // show old events after they are loaded
+});
+
+document.addEventListener('onEventReceived', function(obj) {
+    // obj will contain information about the event
+
+  $(".event:first-child").attr('id', "event" + eventNumber);
+  eventNumber++; // updates event number
+
+  var toRemove = $("body .event:nth-child(" + max + ")").attr('id');
+  $("#" + toRemove).addClass("remove");
+  setTimeout(function(){
+    $("#" + toRemove).remove();
+  }, 1200);
+});
+
+// loads the history from past events
+function showHistory(){
+  $( ".event" ).each(function( index ) {
+    $(this).attr('id', "historyEvent" + index);
+    $(this).addClass("historyEvent");
+  });
+}
